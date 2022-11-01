@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add to Wallet
+{% endblock %}
+
+{% block main %}
+    <form action="/add" method="post">
+        <h1>Add To Your Wallet</h1>
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="name" placeholder="Name" type="text">
+        </div>
+        <div class="mb-3">
+            <!-- <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="type" placeholder="Type" type="text"> -->
+            <select name="type" class="form-select text-center mx-auto w-auto" aria-label="Default select example">
+                <option value="" selected disabled>Choose your type</option>
+                <option value="graded">Graded card</option>
+                <option value="loose">Loose card</option>
+                <option value="sealed">Sealed product</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="grade" placeholder="Grade" type="number" min="0" max="10">
+            <h6>If your card/product was not graded please enter 0.<h6>
+        </div>
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="date" placeholder="Date of Purchase" type="date">
+        </div>
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="price" placeholder="Price of Purchase" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">ADD</button>
+    </form>
+{% endblock %}

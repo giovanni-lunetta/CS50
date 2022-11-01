@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell An Item
+{% endblock %}
+
+{% block main %}
+    <form action="/sale" method="post">
+        <div class="mb-3">
+            <select name="id">
+                {% for row in name %}
+                    <option value="" selected disabled>Choose a product to sell</option>
+                    <option value="{{ row.id }}">{{ row.name ~ " (" ~ row.date ~ ")"}}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Sell</button>
+    </form>
+{% endblock %}

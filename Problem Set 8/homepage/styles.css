@@ -1,0 +1,23 @@
+h1 {
+    color: blue;
+}
+
+li:hover {
+    color: orange;
+}
+
+h4.about {
+    color: green;
+}
+
+#myname {
+    font-family: cursive;
+    font-size: 40px;
+    text-emphasis: underline;
+    color: blue;
+    opacity: 0.8;
+}
+
+.about {
+    font-family: Helvetica, monospace;
+}
