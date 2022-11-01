@@ -1,0 +1,11 @@
+sort1 uses: Bubble
+
+How do you know?: I know that sort1 uses bubble sort for two reasons. The first is because I found merge sort first. When timing random50000.txt sort 2 performed the best by far. Thereofore, I know merge was sort 2 leaving me with only 1 and 2 being bubble or selection. Because I know that bubble runs much quicker when the the list is already sorted, I checked sorted50000.txt on both 1 and 3. 1 had a much faster run time making it obvious that it was the bubble sort.
+
+sort2 uses: Merge
+
+How do you know?: I know that sort2 uses merge sort after the very first test. Because merge runs a random list at speed n log n, it will run much faster than the other two. Using random50000 the time it took sort2 to sort was much quicker than 1 and 3 making it the clear answer.
+
+sort3 uses: Selection
+
+How do you know?: I know sort3 is selection because of process of elimation. Also, because it ran a sorted list around the same time as it ran a random list. 
